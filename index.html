@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Converter</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="Container">
+      <h1 id="heading">Welcome to our Currency Converter.</h1>
+
+      <div id="input">
+        <p>Enter Amount</p>
+        <input value="100" type="number" >
+        
+      </div>
+
+      <div class="dropdown">
+        <div class="from">
+          <p>From</p>
+          <div class="selectorContainer">
+            <img src="https://flagsapi.com/US/flat/64.png" alt="" />
+          <select name="" id="">
+            <option value="">US</option>
+            <option value="">PK</option>
+            <option value="">IN</option>
+          </select>
+          </div>
+          
+        </div>
+        <i class="fa-solid fa-arrow-right-arrow-left fa-beat-fade"></i>
+        <div class="to">
+          <p>To</p>
+          <div class="selectorContainer">
+            <img src="https://flagsapi.com/PK/flat/64.png" alt="" />
+          <select name="" id="">
+            <option value="">US</option>
+            <option value="" selected>PK</option>
+            <option value="">IN</option>
+          </select>
+          </div>
+          
+        </div>
+      </div>
+
+      <div id="msg">
+        1USD = 300PKR
+      </div>
+      
+      <button id="btn">
+        Get Exchange Rate.
+      </button>
+    </div>
+  </body>
 </html>
