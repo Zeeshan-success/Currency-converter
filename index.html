@@ -19,8 +19,7 @@
 
       <div id="input">
         <p>Enter Amount</p>
-        <input value="100" type="number" >
-        
+        <input value="" type="number" />
       </div>
 
       <div class="dropdown">
@@ -28,36 +27,25 @@
           <p>From</p>
           <div class="selectorContainer">
             <img src="https://flagsapi.com/US/flat/64.png" alt="" />
-          <select name="" id="">
-            <option value="">US</option>
-            <option value="">PK</option>
-            <option value="">IN</option>
-          </select>
+            <select name="from" id=""></select>
           </div>
-          
         </div>
         <i class="fa-solid fa-arrow-right-arrow-left fa-beat-fade"></i>
         <div class="to">
           <p>To</p>
           <div class="selectorContainer">
             <img src="https://flagsapi.com/PK/flat/64.png" alt="" />
-          <select name="" id="">
-            <option value="">US</option>
-            <option value="" selected>PK</option>
-            <option value="">IN</option>
-          </select>
+            <select name="to" id=""></select>
           </div>
-          
         </div>
       </div>
 
-      <div id="msg">
-        1USD = 300PKR
-      </div>
-      
-      <button id="btn">
-        Get Exchange Rate.
-      </button>
+      <div id="msg"></div>
+
+      <button id="btn">Get Exchange Rate.</button>
     </div>
+
+    <script src="codes.js"></script>
+    <script src="action.js"></script>
   </body>
 </html>
