@@ -37,7 +37,7 @@ function updateflag(element) {
   let currencycode = countryList[code];
   let newsrc = `https://flagsapi.com/${currencycode}/flat/64.png`;
   let img = element.parentElement.querySelector("img");
-  console.log(img);
+
   img.src = newsrc;
 }
 
@@ -50,7 +50,6 @@ btn.addEventListener("click", async () => {
     userinput = 1;
     userinput = "1";
   }
-  console.log(fromcurrency.value, tocurrency.value);
 
   let newUrl = `${url}/${fromcurrency.value.toLowerCase()}.json`;
 
